@@ -1,0 +1,94 @@
+:root {
+    --eerieBlack: black;
+    --platinum: #DFE0E2;
+    --turkey_red: #A50104;
+}
+
+.nav-link {
+    background-color: var(--platinum);
+    border-radius: 5px;
+    color: black;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.navbar {
+    --bs-navbar-toggler-icon-bg-personal: url(Hamburger_icon.png);
+    margin-top: 0;
+}
+
+#home_link {
+    background-color: white;
+}
+
+#top_nav {
+    background-color: var(--eerieBlack);
+    padding: 20px;
+}
+
+.navbar-brand {
+    color: var(--platinum);
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.navbar-toggler-icon {
+    border-radius: 2px;
+    background-image: var(--bs-navbar-toggler-icon-bg-personal);
+}
+
+#nav_container {
+    padding: 0;
+}
+
+#article_link:hover {
+    background-color: white;
+}
+
+#newsletter_link:hover {
+    background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#articleCarousel {
+    width: 100%;
+    align-self: center;
+    height: 100%;
+    background-color: var(--platinum);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-next{
+    background-color: black;
+    height: 40px;
+    margin-top: 50%;
+}
+
+.carousel-control-prev{
+    background-color: black;
+    height: 40px;
+    margin-top: 50%;
+}
+
+a{
+    color: var(--turkey_red)
+}
+
+a:hover{
+    color: red;
+}
+

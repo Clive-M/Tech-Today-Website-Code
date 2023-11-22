@@ -1,0 +1,65 @@
+:root {
+  --eerieBlack: black;
+  --platinum: #dfe0e2;
+  --turkey_red: #a50104;
+}
+
+.nav-link {
+  background-color: var(--platinum);
+  border-radius: 5px;
+  color: black;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg-personal: url(Hamburger_icon.png);
+  margin-top: 0;
+}
+
+#articles_link {
+  background-color: white;
+}
+
+#top_nav {
+  background-color: var(--eerieBlack);
+  padding: 20px;
+}
+
+.navbar-brand {
+  color: var(--platinum);
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-item {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.navbar-toggler-icon {
+  border-radius: 2px;
+  background-image: var(--bs-navbar-toggler-icon-bg-personal);
+}
+
+img{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+}
+
+#nav_container {
+  padding: 0;
+}
+
+.news_filters {
+  background-color: var(--platinum);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form_check {
+  margin: 0;
+}

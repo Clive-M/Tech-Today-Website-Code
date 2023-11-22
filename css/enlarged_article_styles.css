@@ -1,0 +1,20 @@
+:root {
+    --eerieBlack: black;
+    --platinum: #DFE0E2;
+    --turkey_red: #A50104;
+}
+
+h1{
+    color: var(--turkey_red);
+}
+
+img{
+    width: 60%;
+}
+
+.image_and_text_container{
+    background-color: var(--platinum);
+    padding: 10px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}

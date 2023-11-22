@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="website-name" content="TechToday" />
+    <meta
+      name="description"
+      content="View a selection of articles based on your own preferences."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/article_page_styles.css" />
+    <title>Tech Today Articles</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-12">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          id="nav_container"
+        >
+          <div class="container-fluid" id="top_nav">
+            <a class="navbar-brand" href="#">Tech Today</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a id="home_link" class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    id="articles_link"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="article_page.html"
+                    >Articles</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="newsletter_page.html"
+                    id="newsletter_link"
+                    >Newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Articles</h1>
+          <h4>Select News Filters</h4>
+
+          <div class="col-5">
+            <div class="news_filters">
+              <form action="#">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="article_ai_checkbox"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="article_ai_checkbox"
+                    >AI</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="article_buiness_checkbox"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="article_buiness_checkbox"
+                    >Business</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="article_automation_checkbox"
+                    value="option3"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="article_automation_checkbox"
+                    >Automation</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h2 hidden id="article_heading1">AI</h2>
+          <img
+            src="images/openai-logo.webp"
+            alt="An Image of OpenAI's Logo"
+            hidden
+            id="article_image1"
+          />
+          <p hidden id="article_paragraph1">
+            In a bold move that could shape the future of artificial
+            intelligence, the Chief Executive Officer of OpenAI, Emmett Shear,
+            has set sights on securing fresh investments from technology giant
+            Microsoft. The aim? To accelerate the development of what has been
+            termed as superintelligence—an AI capability that surpasses human
+            intelligence in various cognitive tasks. This endeavor marks a
+            significant chapter in the ongoing quest to push the boundaries of
+            AI capabilities. OpenAI, known for its pioneering work in AI
+            research, has consistently aimed to build advanced AI models capable
+            of solving complex problems, reasoning, and learning with remarkable
+            efficiency. The potential collaboration between OpenAI and Microsoft
+            holds the promise of advancing AI capabilities to unprecedented
+            levels. In recent years, both entities have individually made
+            substantial strides in AI research and development, raising
+            expectations for what could be achieved through a partnership.
+            According to sources close to the matter, the proposed investment
+            from Microsoft could provide OpenAI with the necessary resources to
+            push the frontiers of AI capabilities further than ever before. This
+            includes the development of sophisticated algorithms, powerful
+            computing systems, and the exploration of novel AI architectures.
+            The term superintelligence often sparks both intrigue and
+            apprehension within the tech community and beyond. While the
+            potential benefits of such advanced AI are vast, concerns regarding
+            ethical implications and control over highly intelligent machines
+            loom large. Nonetheless, proponents argue that responsible
+            development and oversight can mitigate these risks. In a recent
+            statement, Emmett Shear highlighted the importance of ethical AI
+            development, emphasizing that any pursuit of superintelligence must
+            be accompanied by stringent ethical frameworks and safety measures
+            to ensure the technology is used for the betterment of humanity. The
+            move to seek new investments for this ambitious AI development
+            initiative comes at a time when the global landscape is increasingly
+            reliant on AI technologies. From healthcare to finance, and from
+            transportation to entertainment, AI's impact is becoming more
+            pronounced, driving the urgency for more advanced, reliable, and
+            ethical AI systems. As discussions between OpenAI and Microsoft
+            progress, the tech world eagerly anticipates the potential outcomes
+            of this partnership. Should the collaboration come to fruition, it
+            could not only redefine the possibilities of AI but also set a
+            precedent for responsible and ethical development in the realm of
+            superintelligence. The journey towards superintelligence may be long
+            and complex, but the convergence of resources and expertise between
+            OpenAI and Microsoft could mark a significant leap forward in
+            shaping the future of AI and its role in our world.
+          </p>
+
+          <h2 hidden id="article_heading2">Business</h2>
+          <img
+            hidden
+            id="article_image2"
+            src="images/Cisco-logo.png"
+            alt="An Image of Cisco's Logo"
+          />
+          <p hidden id="article_paragraph2">
+            Cisco, a leading networking hardware maker, experienced a
+            significant dip in its shares, plummeting as much as 13% in extended
+            trading on Wednesday. This drop followed the company's issuance of a
+            gloomy forecast for both the current quarter and the full fiscal
+            year. In terms of financial performance, Cisco reported earnings of
+            $1.11 per share (adjusted), surpassing analysts' expectations of
+            $1.03 per share. The revenue for the quarter was $14.67 billion,
+            slightly above the expected $14.61 billion. The fiscal first quarter
+            saw a 7.6% increase in revenue, reaching $14.67 billion. Net income
+            also rose to $3.64 billion, or 89 cents per share, compared to $2.67
+            billion, or 65 cents per share, in the same quarter last year. Cisco
+            attributed the slowdown in new product orders during the quarter to
+            clients focusing on installing and implementing products after a
+            robust delivery in the previous three quarters. Cisco CEO Chuck
+            Robbins acknowledged this challenge on a conference call with
+            analysts, emphasizing that customers and sales organizations had
+            clearly communicated this issue over the past 90 days. However, he
+            noted that sales cycles remained longer than usual. The company
+            anticipates that one or two quarters of shipped products are
+            awaiting implementation. As for guidance, Cisco provided a
+            projection of 82 cents to 84 cents in adjusted earnings per share on
+            $12.6 billion to $12.8 billion in revenue for the fiscal second
+            quarter, indicating a 6.6% revenue decline. Analysts had initially
+            expected 99 cents in adjusted earnings per share on $14.19 billion.
+            Despite reducing its full-year revenue forecast, Cisco increased its
+            outlook for earnings. The revised figures stand at $3.87 to $3.93 in
+            adjusted earnings per share on $53.8 billion to $55.0 billion in
+            revenue. In August, the company had forecasted $3.19 to $3.32 in
+            adjusted earnings per share and $57.0 billion to $58.2 billion in
+            revenue. Analysts surveyed by Refinitiv had anticipated $4.05 in
+            adjusted earnings per share and revenue of $57.76 billion. During
+            the quarter, Cisco made headlines with its announcement of plans to
+            acquire data analytics software maker Splunk for a staggering $28
+            billion. Looking ahead, Cisco remains optimistic about its prospects
+            in the artificial intelligence (AI) infrastructure market. CEO Chuck
+            Robbins expressed confidence in winning over $1 billion worth of
+            orders for AI infrastructure from cloud providers in the 2025 fiscal
+            year. Cisco has adopted a flexible approach when collaborating with
+            cloud providers, enabling it to regain footing in the competitive
+            landscape. Robbins emphasized the importance of a standard,
+            broad-based technology like Ethernet for supporting AI
+            infrastructure. Despite the after-hours setback, Cisco's shares have
+            seen a 12% increase year-to-date, trailing behind the S&P 500 index,
+            which has risen by 17% over the same period. The challenges posed by
+            longer sales cycles and a slowdown in product orders indicate a
+            complex landscape for Cisco as it navigates the evolving market
+            conditions.
+          </p>
+
+          <h2 hidden id="article_heading3">Automation</h2>
+          <img
+            hidden
+            id="article_image3"
+            src="images/sales_exec_stock_image.avif"
+            alt="A stock image of a sales executive"
+          />
+          <p hidden id="article_paragraph3">
+            Introduction: Wining and dining, creative offers, and big bonuses
+            may provide the glamor to sales work, but drafting responses to
+            tedious requests for proposals (RFPs) has long been considered a
+            necessary drudgery. However, the landscape of sales administration
+            is undergoing a transformative shift with the introduction of
+            generative AI tools. Companies like Twilio are leveraging advanced
+            technologies such as OpenAI's GPT-4 to automate the process of
+            responding to RFPs, liberating sales teams from hours of mundane
+            work. The Rise of RFP Genie: In April, Twilio unveiled RFP Genie, a
+            generative AI tool designed to streamline the response process to
+            RFPs. This tool digests the RFP, searches internal files for
+            relevant information, and employs GPT-4 to generate a suitable
+            response. What once took a team of staffers two weeks or more can
+            now be accomplished in minutes. Twilio's initiative signals a
+            significant shift in how businesses approach RFPs, embracing the
+            efficiency and accuracy that AI can bring to the table.
+            Industry-Wide Adoption: Twilio is not alone in this endeavor.
+            Google's cloud unit, ad-buying agency EssenceMediacom, DataRobot,
+            and even consulting giants like Bain and Deloitte have incorporated
+            generative AI RFP response bots into their sales processes. IBM, in
+            its internal AI hackathon, selected an RFP bot as the winner,
+            highlighting the potential of AI in revolutionizing traditional
+            business practices. The Birth of Retrieval Augmented Generation
+            (RAG): Twilio's approach to RFP automation involves what the
+            industry now calls Retrieval Augmented Generation (RAG). This
+            methodology combines a program that retrieves relevant information
+            from internal sources with GPT-4, resulting in highly accurate
+            responses. RAG minimizes the risk of AI-generated content errors and
+            serves as a cost-effective alternative to training large language
+            models for specific tasks. Efficiency Without Job Cuts: Contrary to
+            fears of job displacement, companies like Twilio emphasize that AI
+            is not replacing human roles but rather enhancing productivity.
+            Twilio's RFP Genie allows its sales teams to focus on more complex
+            issues that demand human contextualization, thereby improving
+            overall sales pitches and customer interactions. The Human Touch:
+            While AI-generated responses are efficient, human oversight remains
+            crucial. Twilio and other companies ensure that solutions engineers
+            and technical experts review or edit AI-generated answers before
+            sending them to clients. This collaboration between AI and human
+            expertise ensures accuracy and maintains the personal touch
+            necessary for successful sales. The Future of RFP Automation: As
+            AI-powered RFP bots continue to gain acceptance, the industry is
+            likely to witness further automation in related processes. The
+            possibility of AI-generated questions, scoring proposals, and
+            recommending winners raises questions about the future role of
+            humans in business admin practices. The AI RFP is seen as a starting
+            point for a more efficient and streamlined approach to the entire
+            RFP process. Conclusion: The integration of generative AI into the
+            realm of RFP responses marks a significant leap forward in sales
+            efficiency. As companies embrace these technologies, the
+            collaborative efforts of AI and human expertise promise not only
+            time savings but also improved sales pitches and customer
+            interactions. The AI RFP is not a threat to jobs but a tool that
+            empowers sales teams to tackle more complex challenges, ultimately
+            reshaping the landscape of white-collar work in the corporate world.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/article_filter_handler.js"></script>
+  </body>
+</html>

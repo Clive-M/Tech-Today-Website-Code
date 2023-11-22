@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="website-name" content="TechToday" />
+    <meta
+      name="description"
+      content="Recieve news straight to your inbox using our newsletter!"
+    />
+    <meta
+      name="news types"
+      content="Our website contains many types of news for our newsletter such as Hardware, Software, Web and Company Updates."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/newsletter_page_styles.css" />
+    <title>Tech Today Email Newsletter</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-12">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          id="nav_container"
+        >
+          <div class="container-fluid" id="top_nav">
+            <a class="navbar-brand" href="#">Tech Today</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a id="home_link" class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    id="articles_link"
+                    class="nav-link"
+                    href="article_page.html"
+                    >Articles</a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link"
+                    href="newsletter_page.html"
+                    id="newsletter_link"
+                    >Newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Signup to Our Newsletter!</h1>
+          <p>
+            Signup to our newsletter to recieve emails on the most recent news
+            which you prefer.
+          </p>
+          <form
+            name="newsletterForm"
+            action="#"
+            novalidate
+            onsubmit="validateForm(); return false"
+            method="POST"
+          >
+            <div class="col">
+              <div class="form-group">
+                <div class="col-5">
+                  <label for="email_input">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email_input"
+                    name="email"
+                    aria-label="Email Textbox"
+                    placeholder="Enter email"
+                  />
+                </div>
+              </div>
+
+              <h4>News Filters</h4>
+
+              <div class="news_filters">
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="option1"
+                    aria-label="Hardware Checkbox"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox1"
+                    >Hardware</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox2"
+                    value="option2"
+                    aria-label="Software Checkbox"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox2"
+                    >Software</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox3"
+                    value="option3"
+                    aria-label="Web Checkbox"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox3"
+                    >Web</label
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox4"
+                    value="option4"
+                    aria-label="Company Updates Checkbox"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox4"
+                    >Company Updates</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="special_offers_checkbox"
+                  aria-label="Special Offers Checkbox"
+                />
+                <label class="form-check-label" for="special_offers_checkbox"
+                  >Recieve Our Special Offers</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-dark"
+                aria-label="Submit Newsletter Form Button"
+                id="newsletter_submit_button"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/newsletter_validator.js"></script>
+  </body>
+</html>
