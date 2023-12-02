@@ -18,3 +18,44 @@ img{
     margin-bottom: 1%;
     border-radius: 5px;
 }
+
+    
+.nav-link {
+    background-color: var(--platinum);
+    border-radius: 5px;
+    color: black;
+    margin-left: 20px;
+    padding: 5px;
+}
+  
+.navbar {
+    --bs-navbar-toggler-icon-bg-personal: url(Hamburger_icon.png);
+    padding: 0;
+}
+  
+#home_link {
+    background-color: white;
+}
+  
+#top_nav {
+    background-color: var(--eerieBlack);
+    padding: 20px;
+ }
+  
+.navbar-brand {
+    color: var(--platinum);
+}
+  
+.navbar-brand:hover {
+    color: white;
+}
+  
+.nav-item {
+    float: left;
+    margin-bottom: 5px;
+}
+  
+.navbar-toggler-icon {
+    border-radius: 2px;
+    background-image: var(--bs-navbar-toggler-icon-bg-personal);
+}

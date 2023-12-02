@@ -21,6 +21,10 @@
     background-color: white;
 }
 
+#nav_container{
+    margin-top: 0;
+}
+
 #top_nav {
     background-color: var(--eerieBlack);
     padding: 20px;
